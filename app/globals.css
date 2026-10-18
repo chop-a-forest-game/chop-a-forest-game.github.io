@@ -749,3 +749,8 @@ body[data-fixed-template="block-wiki"] .bw-article .launch-tool,body[data-fixed-
 @media(prefers-reduced-motion:reduce){
  body[data-fixed-template="block-wiki"] *,body[data-fixed-template="block-wiki"] *::before,body[data-fixed-template="block-wiki"] *::after{scroll-behavior:auto;transition-duration:.01ms;}
 }
+
+/* Keep long game URLs inside narrow article containers on phones. */
+body[data-fixed-template="block-wiki"] .bw-prose p,
+body[data-fixed-template="block-wiki"] .bw-prose a,
+body[data-fixed-template="block-wiki"] .bw-prose li { overflow-wrap: anywhere; }
