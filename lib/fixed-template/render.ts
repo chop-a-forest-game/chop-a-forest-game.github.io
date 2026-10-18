@@ -106,26 +106,8 @@ function applyEntries(html: string, skin: string, entries: TemplateEntry[]): str
   return html;
 }
 
-function neutralizeDemoCopy(html: string, input: FixedTemplateInput): string {
-  const lead = esc(input.lead || `${input.gameName} guides, walkthroughs, reference information, and quick answers for players.`);
-  let next=html;
-  const replacements:[RegExp,string][]=[
-    [/What Drag(?:&#x27;|')n Wash Is/g,`About ${esc(input.gameName)}`],
-    [/Drag(?:&#x27;|')n Wash is an adult-only dragon wash simulation from Gator Dragon Games\.[\s\S]*?three endings\./g,lead],
-    [/This hub routes you to beginner progress,[\s\S]*?itch\.io\./g,`Use the navigation above to open the guides and reference pages in this site.`],
-    [/Drag(?:&#x27;|')n Wash \(also styled DragN'Wash\)[\s\S]*?open-world exploration\./g,`${esc(input.gameName)} is covered here with player-focused guides and reference information.`],
-    [/Sessions are short by design\.[\s\S]*?Linux\./g,`Use each guide for a focused player task, then follow related pages for deeper coverage.`],
-    [/Ryan, Alexander and Conrad/gi,"Characters and game systems"],
-    [/Three Endings/gi,"Game Guides"],[/3 Routes/gi,"Guide Routes"],[/ENDINGS/g,"GUIDES"],
-    [/Steam \/ itch\.io/gi,"Official platforms"],[/September 10, 2026/gi,"Official release"],[/Gator Dragon Games/gi,"Official developer"],
-  ];
-  for(const [pattern,value] of replacements)next=next.replace(pattern,value);
-  next=next.replaceAll("Drag'n Wash",input.gameName).replaceAll("Drag&#x27;n Wash",esc(input.gameName)).replaceAll("DragN'Wash",input.gameName);
-  return next;
-}
-
 function applyCopy(html: string, input: FixedTemplateInput): string {
-  let next=neutralizeDemoCopy(html,input);
+  let next=html;
   if(input.heading)next=next.replace(/<h1>[\s\S]*?<\/h1>/,`<h1>${esc(input.heading)}</h1>`);
   if(input.lead){ if(next.includes('<p class="lead">'))next=next.replace(/<p class="lead">[\s\S]*?<\/p>/,`<p class="lead">${esc(input.lead)}</p>`); }
   return next;
@@ -159,6 +141,14 @@ export function renderFixedTemplate(input:FixedTemplateInput):string{
   if(input.page==="home"&&input.entries?.length){html=applyEntries(html,pack.skin,input.entries);html=replaceFactsWithEntries(html,input.entries)}
   if(input.page==="inner"&&input.articleHtml)html=replaceArticleBody(html,input.articleHtml);
   if(input.supplementHtml)html=insertSupplement(html,input.supplementHtml);
+  if (input.page === "home") {
+    const guideLinks = input.nav.map((item) => `<a href="${safeAttr(item.href)}">${esc(item.label)}</a>`).join("");
+    html = html.replace(/(<main class="article"><h1>[^<]*<\/h1>)<p><\/p>/, `$1<p class="lead">${esc(input.lead || "")}</p>`);
+    html = html.replace(/<aside class="rail">[\s\S]*?<\/aside>/, `<aside class="rail"><b>Explore guides</b>${guideLinks}</aside>`);
+    html = html.replace(/<footer class="site-footer\s*">[\s\S]*?<\/footer>/,
+      `<footer class="site-footer"><div class="footer-inner"><div><strong>${esc(input.gameName)}</strong><p>Independent player guide. Not affiliated with Roblox or WCT Capital.</p></div><div><b>Guides</b>${guideLinks}</div><div><b>Play safely</b><a href="https://www.roblox.com/games/103363457515322/Chop-A-Forest" rel="noopener noreferrer">Official Roblox game</a></div></div></footer>`);
+  }
+  html = html.replace(/<h([23])(?:\s[^>]*)?><\/h\1>/g, "").replace(/<p><\/p>/g, "").replace(/<a><\/a>/g, "");
   const footerItems = [{href: input.homeHref, label: "Home"}, ...input.nav.map((n) => ({href: n.href, label: n.label}))];
   const footerNav = `<nav class="launch-footer-nav" aria-label="Explore guides">${footerItems.map((item) => `<a href="${safeAttr(item.href)}">${esc(item.label)}</a>`).join("")}</nav>`;
   if(html.includes("</footer>")) html=html.replace("</footer>", footerNav + "</footer>");
