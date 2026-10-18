@@ -4,7 +4,6 @@ import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
 import { siteConfig } from "@/config/site";
 import { siteSkin } from "@/config/skin";
-import { scopedTemplateCss } from "@/lib/fixed-template/render";
 import { isFixedTemplate } from "@/lib/fixed-template/mode";
 import { themes } from "@/config/themes";
 import { enabledLegalPages, visibleCorePages } from "@/content/registry";
@@ -42,12 +41,11 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <Analytics />
       </head>
       <body data-fixed-template={fixed ? fixedSkin : undefined}>
-        {fixed ? <style dangerouslySetInnerHTML={{ __html: scopedTemplateCss(fixedSkin, siteConfig.theme.accentColorId) }} /> : null}
         <style dangerouslySetInnerHTML={{ __html: fontFaceCss(siteConfig.hosting.basePath) }} />
         <a href="#main-content" className="skip-link">Skip to content</a>
         <SiteHeader links={navLinks} />
         <div id="main-content">{children}</div>
-        {fixed ? null : <SiteFooter coreLinks={navLinks} legalLinks={legalLinks} />}
+        <SiteFooter coreLinks={navLinks} legalLinks={legalLinks} />
       </body>
     </html>
   );

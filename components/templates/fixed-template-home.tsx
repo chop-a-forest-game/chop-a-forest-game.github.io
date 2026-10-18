@@ -1,57 +1,78 @@
+import Link from "next/link";
+import { ArrowRight, ExternalLink, Leaf, BookOpen } from "lucide-react";
 import { NativeAdSlot } from "@/components/integrations/native-ad-slot";
 import { Faq } from "@/components/site/faq";
 import { JsonLd } from "@/components/site/json-ld";
+import { PageSections } from "@/components/site/page-sections";
+import type { HomePageDefinition } from "@/config/types";
 import { siteConfig } from "@/config/site";
-import { siteSkin } from "@/config/skin";
-import type { HomePageDefinition, InternalLink } from "@/config/types";
 import { visibleCorePages } from "@/content/registry";
-import { esc, renderFixedDocument } from "@/lib/fixed-template/render";
 import { homeSchemas } from "@/lib/schema";
 import { assetPath, routePath } from "@/lib/urls";
 
-function supplement(home: HomePageDefinition): string {
-  const sections = home.sections.map((section) => {
-    const paragraphs = [section.intro, ...(section.paragraphs ?? [])].filter(Boolean).map((text) => `<p>${esc(text as string)}</p>`).join("");
-    const subsections = (section.subsections ?? []).map((s) => `<div class="launch-subsection"><h3>${esc(s.heading)}</h3>${s.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}</div>`).join("");
-    const steps = section.steps?.length ? `<ol class="launch-steps">${section.steps.map((s) => `<li><strong>${esc(s.heading)}</strong> ${esc(s.description)}</li>`).join("")}</ol>` : "";
-    const links = section.links?.length ? `<nav class="launch-related" aria-label="Guide shortcuts">${section.links.filter((l) => l.slug).map((l) => `<a href="${esc(routePath(l.slug))}"><strong>${esc(l.label)}</strong><span>${esc(l.description || "")}</span></a>`).join("")}</nav>` : "";
-    return `<section id="${esc(section.id)}" class="launch-home-section"><h2>${esc(section.heading)}</h2>${paragraphs}${subsections}${steps}${links}</section>`;
-  }).join("");
-  return `<div class="launch-home-copy">${sections}<p><a href="https://www.roblox.com/games/103363457515322/Chop-A-Forest" target="_blank" rel="noopener noreferrer">Official Chop A Forest game on Roblox (WCT Capital)</a> — identity checked October 18, 2026.</p></div>`;
-}
-
 export function FixedTemplateHome({ home }: { home: HomePageDefinition }) {
-  const skin = siteSkin();
-  const links: InternalLink[] = visibleCorePages
-    .filter((page) => page.slug.replace(/^\/+|\/+$/g, ""))
-    .map((page) => ({ slug: page.slug, label: page.navLabel }));
-  const entries = links.slice(0, 6).map((link) => ({
-    href: routePath(link.slug),
-    title: link.label,
-    text: link.description || link.label,
-  }));
-  const rendered = renderFixedDocument({
-    skin,
-    page: "home",
-    accentColorId: siteConfig.theme.accentColorId,
-    gameName: siteConfig.game.name || siteConfig.shortName,
-    nav: links.map((link) => ({ slug: link.slug, label: link.label, href: routePath(link.slug) })),
-    homeHref: "/",
-    logoUrl: assetPath(siteConfig.assets.logo),
-    bannerUrl: assetPath(siteConfig.assets.cover),
-    heading: home.hero.heading,
-    lead: home.hero.lead,
-    entries,
-    supplementHtml: supplement(home),
-  });
   return (
     <>
       <JsonLd data={homeSchemas(home)} />
-      <div dangerouslySetInnerHTML={{ __html: rendered.rest }} />
-      <div className="site-container"><NativeAdSlot /></div>
-      {home.faq.length ? (
-        <div className="site-container"><Faq items={home.faq} /></div>
-      ) : null}
+      <main className="bw-main">
+        <section className="bw-container bw-home-hero" aria-labelledby="bw-home-title">
+          <div className="bw-home-intro">
+            <p className="bw-kicker"><Leaf size={15} aria-hidden="true" /> {home.hero.eyebrow}</p>
+            <h1 id="bw-home-title">{home.hero.heading}</h1>
+            <p className="bw-hero-lead">{home.hero.lead}</p>
+            <p className="bw-hero-support">{home.hero.supportingText}</p>
+            <div className="bw-hero-actions">
+              {home.hero.primaryLink ? (
+                <Link className="bw-button bw-button-primary" href={routePath(home.hero.primaryLink.slug)}>
+                  <BookOpen size={18} aria-hidden="true" />{home.hero.primaryLink.label}<ArrowRight size={17} aria-hidden="true" />
+                </Link>
+              ) : null}
+              {siteConfig.game.officialUrl && (
+                <a className="bw-button bw-button-outline" href={siteConfig.game.officialUrl} target="_blank" rel="noopener noreferrer">
+                  Play on Roblox <ExternalLink size={16} aria-hidden="true" />
+                </a>
+              )}
+            </div>
+          </div>
+          <figure className="bw-hero-media">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={assetPath(siteConfig.assets.cover)} alt="Chop A Forest Roblox gameplay artwork showing a tree-cutting vehicle" width={840} height={560} />
+            <figcaption>Chop A Forest · Roblox game reference</figcaption>
+          </figure>
+        </section>
+
+        <div className="bw-container">
+          <div className="bw-section-heading">
+            <span className="bw-eyebrow">START HERE</span>
+            <h2>Chop A Forest Guides</h2>
+            <p>Four focused guides for the decisions players make most often.</p>
+          </div>
+          <nav className="bw-guide-grid" aria-label="Explore Chop A Forest guides">
+            {visibleCorePages.map((page, index) => (
+              <Link href={routePath(page.slug)} className="bw-guide-card" key={page.slug}>
+                <span className="bw-guide-index">{String(index + 1).padStart(2, "0")}</span>
+                <h3>{page.navLabel}</h3>
+                <p>{page.description}</p>
+                <span className="bw-guide-go">Open guide <ArrowRight size={16} aria-hidden="true" /></span>
+              </Link>
+            ))}
+          </nav>
+          <NativeAdSlot />
+          <div className="bw-prose bw-home-content">
+            <PageSections sections={home.sections} />
+            <p className="bw-source-note">
+              <a href={siteConfig.game.officialUrl || "https://www.roblox.com/games/103363457515322/Chop-A-Forest"} target="_blank" rel="noopener noreferrer">
+                Official Chop A Forest Roblox game (WCT Capital)
+              </a> · identity checked October 18, 2026. This website is independent and not affiliated with Roblox.
+            </p>
+          </div>
+          {home.faq.length ? (
+            <div className="bw-faq">
+              <Faq items={home.faq} />
+            </div>
+          ) : null}
+        </div>
+      </main>
     </>
   );
 }

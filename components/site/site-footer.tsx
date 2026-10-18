@@ -5,7 +5,7 @@ import { routePath } from "@/lib/urls";
 
 export function SiteFooter({ coreLinks, legalLinks }: { coreLinks: InternalLink[]; legalLinks: InternalLink[] }) {
   return (
-    <footer className="mt-20 border-t border-border bg-card/45">
+    <footer className="bw-footer mt-20 border-t border-border bg-card/45">
       <div className="site-container grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <p className="mb-3 text-lg font-black text-foreground">{siteConfig.siteName}</p>
