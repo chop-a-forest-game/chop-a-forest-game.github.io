@@ -159,6 +159,10 @@ export function renderFixedTemplate(input:FixedTemplateInput):string{
   if(input.page==="home"&&input.entries?.length){html=applyEntries(html,pack.skin,input.entries);html=replaceFactsWithEntries(html,input.entries)}
   if(input.page==="inner"&&input.articleHtml)html=replaceArticleBody(html,input.articleHtml);
   if(input.supplementHtml)html=insertSupplement(html,input.supplementHtml);
+  const footerItems = [{href: input.homeHref, label: "Home"}, ...input.nav.map((n) => ({href: n.href, label: n.label}))];
+  const footerNav = `<nav class="launch-footer-nav" aria-label="Explore guides">${footerItems.map((item) => `<a href="${safeAttr(item.href)}">${esc(item.label)}</a>`).join("")}</nav>`;
+  if(html.includes("</footer>")) html=html.replace("</footer>", footerNav + "</footer>");
+  else html=html.replace("</body>", footerNav + "</body>");
   html=applyCopy(html,input);
   html=html.replace(/--accent:#[0-9A-Fa-f]{6}/,`--accent:${paint.textAccent}`);
   html=html.replace("</style>",`${accentOverrideCss(pack.skin,paint)}</style>`);

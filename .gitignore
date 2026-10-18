@@ -7,6 +7,6 @@ out/
 *.tsbuildinfo
 .playwright-cli/
 release/
-
-# Internal build research must never be committed
+*.zip
+*.log
 *详情资料*.txt

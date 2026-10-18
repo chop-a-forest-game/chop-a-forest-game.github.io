@@ -1,11 +1,11 @@
 {
-  "readyForLaunch": false,
+  "readyForLaunch": true,
   "siteName": "Chop A Forest Guide",
   "shortName": "Chop A Forest",
-  "description": "Chop A Forest guides, walkthroughs, tips, updates, and reference information.",
+  "description": "Independent Chop A Forest Roblox guide: classes, free Gems, permanent perks and tool upgrade comparisons with dated sources and budget planners.",
   "language": "en",
   "locale": "en_US",
-  "authorName": "Editorial Team",
+  "authorName": "Chop A Forest Guide",
   "theme": {
     "preset": "obsidian-red",
     "overrides": {
@@ -54,11 +54,11 @@
   "game": {
     "name": "Chop A Forest",
     "platform": "Roblox",
-    "developer": "",
-    "genre": "",
-    "officialUrl": "https://www.roblox.com/games/103363457515322"
+    "developer": "WCT Capital",
+    "genre": "Simulation",
+    "officialUrl": "https://www.roblox.com/games/103363457515322/Chop-A-Forest"
   },
   "seo": {
-    "titleTemplate": "%s | Chop A Forest Guide"
+    "titleTemplate": "%s"
   }
 }

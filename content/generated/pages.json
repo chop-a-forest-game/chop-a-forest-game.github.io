@@ -1,1 +1,1067 @@
-[]
+[
+  {
+    "enabled": true,
+    "slug": "classes",
+    "pageType": "guide",
+    "navLabel": "Classes",
+    "title": "Chop A Forest Classes – Tier List, Prices & Best Picks",
+    "description": "Compare Chop A Forest classes, gem prices, abilities and tier-list picks. Filter classes by budget and see which option fits your playstyle.",
+    "navVisible": true,
+    "hero": {
+      "eyebrow": "CLASS COMPARISON • OCT 2026 REFERENCE",
+      "heading": "Chop A Forest Classes: Prices, Abilities & Tier List",
+      "lead": "Community guides report ten Chop A Forest classes, from the free Woodcutter to 4,000-Gem Clawman. Filter the dated roster below by your Gem budget; confirm any price in the live shop."
+    },
+    "sections": [
+      {
+        "id": "all-classes",
+        "heading": "All Chop A Forest Classes and Prices",
+        "intro": "This table reproduces the distinguishable October 2026 third-party class-card claims as a dated comparison, not a fresh in-game verification.",
+        "paragraphs": [
+          "The class guide at chopaforest-wiki.wiki describes ten options. Different publishers disagree on some currencies and pass values; entries here represent published Gem-card reference prices where supplied, and they must not be read as guaranteed live prices. Always distinguish a Gems cost from an adjacent Robux-only Gamepass.",
+          "The rarity field is a label from third-party guides. It is not a drop probability, stock probability or promise that a listed class can be bought at the next refresh. The effect descriptions summarize reported card text; they are not calculated damage-per-second or cash-per-hour outcomes.",
+          "Clawman has been reported as a Secret 4,000-Gem card and separately as a Robux class pass, with inconsistent Robux prices in public guides. Do not subtract Robux from your Gem budget. The player-facing comparison tool only uses entries with a numerically reported Gem price and lets you decide whether to believe that dated reference."
+        ],
+        "subsections": [
+          {
+            "heading": "Confirmed names and reported card effects",
+            "paragraphs": [
+              "A dated roster includes Woodcutter, Lumberjack, Logmaster, Timber Baron, Forest Reaper, Chainsaw Specialist, Timber Titan, Ultimate Lumberjack, Lumber Legend and Clawman. These names are corroborated by multiple community pages, not by a developer-published live class API.",
+              "Power and Carry describe different bottlenecks. Sell Price affects sale receipts; Walk Speed affects movement; Rare Tree Luck refers to a displayed attribute, not a measured tree probability. Do not equate percentage buffs with guaranteed outcomes."
+            ]
+          },
+          {
+            "heading": "Gem costs versus optional Robux passes",
+            "paragraphs": [
+              "The reported starter is free. Published Gem-card values rise from Lumberjack at 180 to Clawman at 4,000. An optional pass is an independent Roblox product, not a second wallet you can combine with Gems.",
+              "Screenshots, shop refreshes and account state may show other offers. Compare the unit beside the number, whether the class is in stock and the confirmation screen before spending."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Third-party class roster dated October 2026 — not official live prices",
+          "columns": [
+            "Class",
+            "Rarity",
+            "Published reference price",
+            "Reported perk line",
+            "Best-fit goal"
+          ],
+          "rows": [
+            [
+              "Woodcutter",
+              "Common",
+              "Free",
+              "Power +5%",
+              "Starter; good when no Gems"
+            ],
+            [
+              "Lumberjack",
+              "Uncommon",
+              "180 Gems",
+              "Power +10%, Carry +1",
+              "Early carry and cutting"
+            ],
+            [
+              "Logmaster",
+              "Rare",
+              "270 Gems",
+              "Carry +2, Sell Price +10%",
+              "More logs and sale value"
+            ],
+            [
+              "Timber Baron",
+              "Rare",
+              "330 Gems",
+              "Sell Price +30%",
+              "Sale-focused runs"
+            ],
+            [
+              "Forest Reaper",
+              "Epic",
+              "500 Gems",
+              "Power +20%, Rare Tree Luck +25%",
+              "Rare-tree goal"
+            ],
+            [
+              "Chainsaw Specialist",
+              "Epic",
+              "800 Gems",
+              "Power +35%, Walk Speed +10%",
+              "Movement and chopping"
+            ],
+            [
+              "Timber Titan",
+              "Legendary",
+              "1,000 Gems",
+              "Power +60%, Carry +2",
+              "Heavy cutting plus capacity"
+            ],
+            [
+              "Ultimate Lumberjack",
+              "Legendary",
+              "1,600 Gems",
+              "Power / Walk Speed / Sell bonuses reported",
+              "Multi-goal pick; inspect current card"
+            ],
+            [
+              "Lumber Legend",
+              "Mythic",
+              "2,700 Gems",
+              "Bonuses across five attributes reported",
+              "Long-range Gem target"
+            ],
+            [
+              "Clawman",
+              "Secret",
+              "4,000 Gems",
+              "High bonuses across listed attributes reported",
+              "High-cost goal, Pass prices disputed"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "tier-list",
+        "heading": "Class Tier List by Player Goal",
+        "intro": "There is no single verified live best class: the right choice depends on your wallet and which action slows your run.",
+        "paragraphs": [
+          "For a brand-new account, a free Woodcutter is a usable starting point while you learn whether chopping, hauling or selling consumes more of your time. Lumberjack is an early reported upgrade because it addresses both chopping and carry space. These are editorial value judgments, not a game-developer S-rank.",
+          "For sale-focused play, the published Logmaster and Timber Baron bonuses offer specific reasons to compare their displayed values. For rare trees, Forest Reaper is a more direct thematic match. For general power and mobility, the published Chainsaw Specialist or Timber Titan effects fit that goal, provided your Gem balance and live inventory allow the purchase.",
+          "High-price goals such as Ultimate Lumberjack, Lumber Legend and Clawman deserve a separate check: higher displayed stats may not be worth delaying an urgent utility upgrade. We do not assign fake performance scores, exact farming rates or claims about hidden stock probability."
+        ],
+        "subsections": [
+          {
+            "heading": "Best class for a beginner",
+            "paragraphs": [
+              "Free Woodcutter removes the need for an immediate Gem spend. If your first Gems arrive and you still struggle with the number of logs carried, compare Lumberjack's dated +1 Carry claim against the current class card."
+            ]
+          },
+          {
+            "heading": "Best classes for power and carrying",
+            "paragraphs": [
+              "Compare the published Timber Titan +60% Power and +2 Carry description with lower-cost Lumberjack or Logmaster. The existence of a buff does not tell you actual minutes saved per run."
+            ]
+          },
+          {
+            "heading": "Best long-term class goals",
+            "paragraphs": [
+              "Clawman is reported at 4,000 Gems, a much larger commitment. Budget for the gap, check current availability and compare whether permanent perks better fix a bottleneck before saving all your currency."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "choose-budget",
+        "heading": "Choose a Class Within Your Gem Budget",
+        "intro": "Use the interactive filter below the published table to show reported affordable Gem cards. It never spends Gems, connects to Roblox or assumes a Robux offer is interchangeable.",
+        "paragraphs": [
+          "Enter a nonnegative whole-number balance, choose a goal and optionally show only cards you can afford. The results are based on the dated Gem prices in the public reference table, not live prices. If your card differs, trust that card and make the purchase decision in Roblox.",
+          "An affordability flag means only that the reference price is not greater than your input. It does not mean that the class is in stock, the correct currency is offered, a prerequisite is complete or the estimated benefit is guaranteed. A shortfall is simply the reference cost minus the Gems you entered.",
+          "If you own a class already, you do not need the calculator to recommend buying it again; inspect your Roblox inventory and deselect candidates as appropriate. We intentionally do not invent owned-state synchronization."
+        ],
+        "subsections": [
+          {
+            "heading": "Class selector: balance and goal",
+            "paragraphs": [
+              "Use Gem balance and Power, Carrying, Sell Price, Speed or Rare Tree goal. The local browser filters the static table without an account or external data feed."
+            ]
+          },
+          {
+            "heading": "What the picker does not claim",
+            "paragraphs": [
+              "No listed price is endorsed as current by Roblox. Filtering by a goal labels a published effect category, not a promise of a measurable win rate."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shop",
+        "heading": "How the Class Shop Works",
+        "intro": "Community footage describes a Classes booth and approximately five-minute restocks, but only your live session can confirm its current state.",
+        "paragraphs": [
+          "Look for the Classes shop or booth in your game. Read every tile carefully: the current price, Gems icon, Robux offer, stock state and description are different fields. A sold-out card is not necessarily a removed class; a refresh might change what is offered.",
+          "Several October reports describe a shop refresh around every five minutes. No official guarantee of that interval was established by the sources reviewed. Rather than counting on a fixed timer, use the live countdown if it is visible.",
+          "Before confirming a purchase, check the card details and the currency in the final prompt. For reported high-tier passes such as Clawman, independent guides have conflicting Robux values, so do not save toward a guessed amount."
+        ],
+        "subsections": [
+          {
+            "heading": "Finding the Classes booth",
+            "paragraphs": [
+              "Use the shop signage in the live Roblox experience rather than a third-party purchase link. Opening a guide should never require external payment or Roblox credentials."
+            ]
+          },
+          {
+            "heading": "Restocks, owned state and purchase confirmation",
+            "paragraphs": [
+              "Watch for the stock indicator, inspect any equipped or owned mark and confirm the correct wallet was charged. Re-enter the game if the UI appears stale, but do not interpret that as a guaranteed fix."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "class-notes",
+        "heading": "Class Prices and Update Notes",
+        "intro": "Reference set: October 16–18, 2026; this site does not have direct access to your Roblox account or live class cards.",
+        "paragraphs": [
+          "The ten-class list is supported by the published roster at chopaforest-wiki.wiki/wiki/classes/ and its associated class picker. Additional observations appear in chopaforest-wiki.wiki/guides/classes-and-stock/. These sources are separate from the official Roblox developer description.",
+          "Some third-party reports disagree about the Class Shop payment method, specific card amounts and Clawman pass costs. A dated source is better than an unlabeled assertion, but neither substitutes for the current game. Whenever a number conflicts, record the exact card, unit, date and whether it is a Gems item or Robux product.",
+          "If a new game version changes the class list, this comparison should update the roster and reference labels together. We do not publish a fake automated update log, and we do not claim these values were checked in the game by us."
+        ],
+        "subsections": [
+          {
+            "heading": "How we verify price changes",
+            "paragraphs": [
+              "Look for the actual Gems or Robux icon in a dated in-game recording or your current session. Keep a class name, effect and cost paired to the same card."
+            ]
+          },
+          {
+            "heading": "Class data correction log",
+            "paragraphs": [
+              "No direct player-client correction has been received for this edition. We will distinguish a confirmed new screenshot from an old example rather than silently changing a past observation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claim Gems before choosing a class",
+            "slug": "free-gems",
+            "description": "Separate free rewards from class shopping."
+          },
+          {
+            "label": "Compare permanent Gem Perks",
+            "slug": "gem-perks",
+            "description": "Avoid spending all your Gems on a class without comparing perks."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is the best class in Chop A Forest?",
+        "answer": "There is no verified universal best. Beginners can use free Woodcutter; compare the live effects and Gem prices for carry, selling, power or rare-tree goals."
+      },
+      {
+        "question": "How many classes are in Chop A Forest?",
+        "answer": "An October 2026 third-party roster documents ten class cards. The current Roblox shop may change."
+      },
+      {
+        "question": "How do I get Clawman?",
+        "answer": "Community references show a 4,000-Gem card and a separate Robux pass with disputed prices. Check the current class shop and the Roblox confirmation screen."
+      },
+      {
+        "question": "Do classes cost Gems or Coins?",
+        "answer": "Third-party class-card tables predominantly report Gems, while separate Robux products can exist. Coin tools and upgrades are a different store category; check each live card."
+      },
+      {
+        "question": "How often does the Class Shop restock?",
+        "answer": "Several guides report roughly five minutes. This is not a verified official fixed interval; follow the live shop timer."
+      }
+    ],
+    "relatedSlugs": [
+      "free-gems",
+      "gem-perks",
+      "tools-upgrades"
+    ],
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "enabled": true,
+    "slug": "free-gems",
+    "pageType": "guide",
+    "navLabel": "Free Gems",
+    "title": "How to Get Gems in Chop A Forest – Free Rewards Guide",
+    "description": "Learn how to get Gems in Chop A Forest through rewards and gameplay. Follow claim steps, check requirements and avoid unverified gem codes.",
+    "navVisible": true,
+    "hero": {
+      "eyebrow": "FREE REWARDS • CLAIM CHECKLIST",
+      "heading": "How to Get Gems in Chop A Forest",
+      "lead": "Reported free Gem sources include the lobby Daily Reward, a social/group reward checklist, Gems from trees and completing a forest. Read your own reward timer and eligibility before expecting a payout."
+    },
+    "sections": [
+      {
+        "id": "sources",
+        "heading": "Every Reported Gem Source in Chop A Forest",
+        "intro": "Free currency is not the same as Coins from log sales or Robux gem packs. The guide starts with clearly reported methods and their evidence limits.",
+        "paragraphs": [
+          "The game's official public description establishes a log-to-Coin economy but does not publish a universal Gem drop rate or the current reward amount for each account. October third-party footage-based guides document two claim panels and describe gameplay-earned Gems, so we treat those as reported mechanics rather than guaranteed payouts.",
+          "The lobby Daily Reward is repeatedly documented, but a +35-Gem screenshot and a reported six-hour timer are not a promise of 140 Gems each day. Different reward panels can have multiple rows and different values. Read the exact reward you can currently claim and look at the countdown.",
+          "Likewise, a +100 Group Reward panel and a separate 180-Gem once-only social-reward account may refer to different observations or states. Never add them together as a single entitlement. The amount actually offered to you is the only amount to use in budgeting.",
+          "Gem packs bought for Robux may also exist; those are paid products and never counted in the free methods below. A guide promising guaranteed codes without an actual redeem mechanic is not evidence of available free Gems."
+        ],
+        "subsections": [
+          {
+            "heading": "Daily Reward versus Group Reward",
+            "paragraphs": [
+              "Daily rewards are time-dependent and involve an in-game claim. Group or social rewards are eligibility-dependent: like, favourite and join the group named on the current card before clicking the in-game confirmation.",
+              "If the claim control is disabled, inspect whether it is waiting for time, a membership checkbox or something else. No guide can legitimately claim rewards on behalf of your Roblox account."
+            ]
+          },
+          {
+            "heading": "Gems from trees and forest clears",
+            "paragraphs": [
+              "Third-party gameplay coverage describes Gems associated with trees and forest completion. The exact drop rates and completion amounts have not been independently established here, so there is no trustworthy Gems-per-hour forecast.",
+              "If you need a repeatable method, play through legitimate chopping progress and look for actual currency changes. Do not confuse Coin sale proceeds with Gem drops."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Reported sources • community observations Oct 13–16, 2026",
+          "columns": [
+            "Method",
+            "Free?",
+            "Reported amount",
+            "What to verify"
+          ],
+          "rows": [
+            [
+              "Lobby Daily Reward",
+              "Yes",
+              "A +35 Gem card reported; other rows differ",
+              "Current timer, claim button, Gem balance"
+            ],
+            [
+              "Group / social checklist",
+              "Yes, if eligible",
+              "+100 and 180 each reported (conflict)",
+              "Actual current group, tasks and one-time flag"
+            ],
+            [
+              "Tree drops / mutations",
+              "Yes",
+              "No verified rate",
+              "Gem change after collecting in-game"
+            ],
+            [
+              "Forest completion",
+              "Yes",
+              "No verified payout",
+              "Clear completion and Gem wallet change"
+            ],
+            [
+              "Robux Gem packs",
+              "No",
+              "Paid amounts vary",
+              "Roblox product price and confirmation"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "daily",
+        "heading": "Claim the Lobby Daily Reward",
+        "intro": "The shortest check is to find the Rewards stall, look at the currently enabled row and confirm your balance after tapping Claim.",
+        "paragraphs": [
+          "Return to the lobby and locate the Daily Reward or Rewards area. October footage showed a sign and a visible countdown. If the countdown is still active, a label that says Daily does not make the reward immediately available; wait until the interface says the claim can be made.",
+          "Read the amount on your currently available tile before pressing it. If several reward rows are displayed, identify the specific one instead of assuming every row equals +35 Gems. Some reported rewards include both Coins and Gems.",
+          "After claiming, look again at the Gem balance and any updated timer. A previously seen image is evidence that the panel existed during that recording, not proof that your account was credited. If the balance does not change, recheck the current state; do not repeatedly click a paid-looking button.",
+          "A mathematical example can help you compare values: if a claim really pays 35 Gems, you gain 35 Gems once it succeeds. Multiplying that by unconfirmed daily opportunities is not a guarantee of repeatable earnings."
+        ],
+        "subsections": [
+          {
+            "heading": "Find the Reward stall",
+            "paragraphs": [
+              "Use the in-game lobby, not an offsite 'claim' form. Search for Daily Reward or Rewards signage and compare the tile to the current player wallet."
+            ]
+          },
+          {
+            "heading": "Read the current timer and claim state",
+            "paragraphs": [
+              "The first decision is eligibility: is the timer finished and is the claim active? A finished timer without a wallet increase means the grant still needs confirmation."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Locate the lobby reward",
+            "description": "Return to the lobby and open the Rewards / Daily Reward area visible in your client."
+          },
+          {
+            "heading": "Read the live timer and amount",
+            "description": "Use the number and enabled state on the current card, not a dated guide screenshot."
+          },
+          {
+            "heading": "Claim and compare Gems",
+            "description": "Claim only when eligible, then check the balance and next timer for a change."
+          }
+        ]
+      },
+      {
+        "id": "group",
+        "heading": "Complete the Group Reward Checklist",
+        "intro": "Social reward tasks are separate from the timed daily tile and may be one-time per eligible account.",
+        "paragraphs": [
+          "Open the current Group Reward or social-reward panel in the Roblox game. October third-party footage showed a checklist tied to liking the experience, favouriting it and joining a named group. The current creator credit is WCT Capital, but one older screenshot named a different group, so the group shown on YOUR live card is the relevant target.",
+          "Complete the actions in the locations where they belong: like or favourite on the Roblox experience page and join the applicable Roblox group through Roblox's normal interface. Return to the game and read whether each corresponding requirement is recognized.",
+          "Some reports describe the completion button as Done or I already did this. If one box stays empty, an unresponsive button may simply indicate missing eligibility. A screenshot of completed checks is still not proof that a Gem deposit succeeded; verify the wallet.",
+          "If you are already a member and the reward is unavailable, make sure the Roblox account in the group matches the account in the game, then refresh the state through the game's own UI. There is no verified external method to force the reward, and this site does not request account access."
+        ],
+        "subsections": [
+          {
+            "heading": "Check each requirement",
+            "paragraphs": [
+              "Check like, favourite, correct group membership, account identity and whether the reward was already redeemed. One-time offers should not be placed in a repeating daily-income calculation."
+            ]
+          },
+          {
+            "heading": "Fix a missing or unclaimed reward",
+            "paragraphs": [
+              "Reopen the panel, identify the unchecked line and inspect its wording. Do not blindly trust an old group link or an unsupported 'working code'."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Open the reward card",
+            "description": "Read the live group name, number of Gems, and each item on the panel."
+          },
+          {
+            "heading": "Complete Roblox-side tasks",
+            "description": "Like and favourite the experience and join the group exactly as your current card directs."
+          },
+          {
+            "heading": "Confirm in the game",
+            "description": "Return to the reward panel, check every box and confirm; then check the actual Gem balance."
+          }
+        ]
+      },
+      {
+        "id": "farming",
+        "heading": "Best Repeatable Gem Farming Methods",
+        "intro": "The honest repeatable route uses actual gameplay and live rewards, not a fixed 'Gems per minute' claim.",
+        "paragraphs": [
+          "Community guides mention drops from trees, special trees and completing forest stages. Those claims suggest actions to watch during normal play, but no evidence here establishes the exact number of Gems per tree, mutation odds, forest clear payout or the best farming location.",
+          "Keep track of your balance before and after a run to learn which actions produced Gems in your current game version. A useful experiment holds everything else constant: note the starting wallet, complete a stage or a set of trees, then note the ending wallet and any separate claims.",
+          "If you spend Gems to increase Gem Value, avoid confusing a menu description of '+20% gems from trees' with a proven bonus to all Gem sources. The wording refers specifically to trees in the inspected example; it does not establish a multiplier on group rewards.",
+          "The most reliable budget calculation uses Gems already displayed on your own screen. The Gem Perks planner lets you enter a real balance and card costs without assuming future rewards."
+        ],
+        "subsections": [
+          {
+            "heading": "Which sources repeat",
+            "paragraphs": [
+              "A lobby timer suggests a repeating claim subject to eligibility. A group offer may be once-only. Tree drops and forest clears are gameplay-dependent; their exact repeat rates remain unverified."
+            ]
+          },
+          {
+            "heading": "Free rewards versus Robux gem packs",
+            "paragraphs": [
+              "A purchase marked in Robux is not free, even if a guide lists it beside free Gem methods. Only claim official Roblox offers through the game."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "accuracy",
+        "heading": "Gem Sources, Cost and Accuracy Notes",
+        "intro": "Price and payout references were gathered from October 2026 community pages; they can become outdated.",
+        "paragraphs": [
+          "The free-Gems coverage at chopaforest-wiki.wiki/guides/free-gems/ and chop-a-forest.wiki/gems/ describes lobby mechanics and conflicting social payouts. That disagreement is visible evidence of uncertainty; this page does not resolve it by inventing a third value.",
+          "No working code string or verified in-game code-redemption flow was established for this experience in the referenced gameplay. Rewards should not be renamed 'codes' for search traffic. Do not install scripts or enter credentials on a third-party gem site.",
+          "Before buying a class or perk, verify that the Gem total in your game is correct and that the shop card's currency is actually Gems. Coin totals are separate; combining them produces a false affordability answer.",
+          "If a game update revises the claim panel, prioritize the live eligibility text and Roblox's official game listing, then use dated community footage only for comparison."
+        ],
+        "subsections": [
+          {
+            "heading": "What players should verify before spending Gems",
+            "paragraphs": [
+              "Identify amount, currency, whether the reward is one-time, whether the claim button is enabled and whether the wallet actually changed."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Compare reported class Gem costs",
+            "slug": "classes",
+            "description": "Decide if you want to save toward a card."
+          },
+          {
+            "label": "Open the perk budget calculator",
+            "slug": "gem-perks",
+            "description": "Enter your current Gem wallet and prices."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "How do I get free Gems in Chop A Forest?",
+        "answer": "Check the in-game Daily Reward and Group Reward panels; third-party footage also reports gameplay Gems from trees and forest clears. Current amounts must be read in your client."
+      },
+      {
+        "question": "Where is the daily reward?",
+        "answer": "Reported footage places a Rewards or Daily Reward stall in the lobby. Read the visible current timer and claim button."
+      },
+      {
+        "question": "How often can I claim daily rewards?",
+        "answer": "A dated example used a six-hour timer despite the Daily label. Follow the live timer rather than assuming an exact calendar interval."
+      },
+      {
+        "question": "Why did my Group Reward not pay out?",
+        "answer": "Check every required box, the named Roblox group and the account used. A clicked button or checked box is not proof the wallet changed."
+      },
+      {
+        "question": "Are there working Chop A Forest codes for Gems?",
+        "answer": "No redeemable code string was confirmed in the sources reviewed. Do not confuse lobby rewards with redemption codes."
+      },
+      {
+        "question": "What should I spend my Gems on?",
+        "answer": "Compare actual class-card effects and the four permanent perks against your current balance. The Gem Perks page computes combinations without guessing future rewards."
+      }
+    ],
+    "relatedSlugs": [
+      "gem-perks",
+      "classes",
+      "tools-upgrades"
+    ],
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "enabled": true,
+    "slug": "gem-perks",
+    "pageType": "guide",
+    "navLabel": "Gem Perks",
+    "title": "Chop A Forest Gem Perks – Costs & Budget Planner",
+    "description": "Compare Chop A Forest permanent Gem Perks and plan a budget for Sell Value, Mutation Luck, Gem Value and Bigger Bundle. Edit prices to match your shop.",
+    "navVisible": true,
+    "hero": {
+      "eyebrow": "INTERACTIVE GEM BUDGET",
+      "heading": "Chop A Forest Gem Perks & Budget Planner",
+      "lead": "The reported permanent perks are Sell Value, Mutation Luck, Gem Value and Bigger Bundle. Choose perks and enter your own current Gem costs to calculate a total, remaining Gems or a shortfall."
+    },
+    "sections": [
+      {
+        "id": "four-perks",
+        "heading": "All Four Permanent Gem Perks",
+        "intro": "A dated October 13 player-menu recording identified four permanent perk lines. These effect descriptions are observed menu claims, not independently measured game formulas.",
+        "paragraphs": [
+          "Sell Value was shown as adding 10% cash per log, Mutation Luck as adding 15% mutation chance, Gem Value as adding 20% Gems from trees and Bigger Bundle as carrying one extra log. Read those descriptions as labels from a specific account and time, not guaranteed live stats across every new level.",
+          "These choices address different problems. Sell Value increases the receipt from selling, Gem Value refers to Gem income associated with trees, Bigger Bundle changes carrying capacity and Mutation Luck refers to a chance-related card. A percentage described on a menu does not prove an exact drop probability, stacking formula or hourly return.",
+          "The table includes a 40-Gem Mutation Luck example from October 13 footage. Other guides give 25, so no universal starting price can be assumed. Prices for subsequent levels may also increase. The planner below deliberately allows every cost to be edited."
+        ],
+        "subsections": [
+          {
+            "heading": "Perk effects and source dates",
+            "paragraphs": [
+              "The four effect and starting-price examples come from inspected October 13 footage described by the independent guide chop-a-forest.wiki/gem-perks/. This source is a dated account snapshot and is not the official developer's price schedule."
+            ]
+          },
+          {
+            "heading": "Which values are observed, not guaranteed",
+            "paragraphs": [
+              "The described values are a picture of what one account showed. Your current account might have another level, pricing state or game update; the explanation of a conflict is not proven until the developer or a new direct recording confirms it."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "October 13 observed account example — check your live perk cards",
+          "columns": [
+            "Permanent Perk",
+            "Reported effect",
+            "Example observed cost"
+          ],
+          "rows": [
+            [
+              "Sell Value",
+              "+10% sale cash per log",
+              "25 Gems observed"
+            ],
+            [
+              "Mutation Luck",
+              "+15% mutation chance (menu wording)",
+              "40 Gems observed; other report 25"
+            ],
+            [
+              "Gem Value",
+              "+20% Gems from trees",
+              "50 Gems observed"
+            ],
+            [
+              "Bigger Bundle",
+              "+1 log carried",
+              "30 Gems observed"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "planner",
+        "heading": "Live Gem Budget Planner",
+        "intro": "Try the calculator on this page using your own whole-number balance, selected perks and current card costs.",
+        "paragraphs": [
+          "The planner begins with clearly marked example costs, not universal prices. Select any combination of the four perk lines, edit each Gem cost to match the live card and enter your total Gems. It recalculates without logging in, saving personal account information or calling a game API.",
+          "When every selected cost is a valid nonnegative integer, the total is the sum of selected costs. Remaining Gems is the maximum of zero and balance minus total; the shortfall is the maximum of zero and total minus balance. The tool does not allow negative amounts to become 'discounts'.",
+          "If the balance or any selected price is empty, negative, fractional or otherwise invalid, the result says incomplete prices instead of silently treating a missing value as zero. Unselected blank prices do not block the calculation. Reset restores the dated example and an empty selection.",
+          "For example, start with 100 Gems and select Sell Value 25, Gem Value 50 and Bigger Bundle 30. The cost is 105, so you need five more Gems. Deselect Bigger Bundle and the remaining selection costs 75, leaving 25. This is arithmetic, not a promise the purchase is available or permanent in the same manner on your account."
+        ],
+        "subsections": [
+          {
+            "heading": "Enter your Gem balance",
+            "paragraphs": [
+              "Look at the actual Gem wallet in-game. Enter that number, not Coins or a hoped-for future claim."
+            ]
+          },
+          {
+            "heading": "Select perks and edit the current card price",
+            "paragraphs": [
+              "Each checkbox is independent. The observed example values are convenient test data; changing a field changes the budget result immediately."
+            ]
+          },
+          {
+            "heading": "Read total cost, balance and shortfall",
+            "paragraphs": [
+              "A result labelled affordable describes only the numbers entered, not stock, required previous levels or whether the displayed card is your next level."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "which-first",
+        "heading": "Which Gem Perk to Buy First?",
+        "intro": "There is no evidenced universal optimal perk order; use your current bottleneck instead of an invented tier formula.",
+        "paragraphs": [
+          "If long walks between trees and the seller consume more time than cutting, the Bigger Bundle capacity bonus has a direct practical use. More logs carried per trip may reduce returns to the selling point, but the actual number of trips saved depends on how many logs you gather.",
+          "If selling value is your limiting factor, Sell Value is the perk whose wording directly concerns money per sold log. If you are intentionally hunting mutations, Mutation Luck is thematically aligned, but an advertised chance bonus does not establish a measured probability or expected rewards.",
+          "Gem Value is a more relevant comparison for a player whose visible Gem income comes from trees. It is not evidence that group rewards, quest payouts or paid Gem packs are multiplied. Choose it only after checking the current game card and the source of your Gem earnings.",
+          "Compare a permanent perk purchase against a class card using the Classes guide. Currency is shared in some community references but costs are different, and neither route is automatically superior."
+        ],
+        "subsections": [
+          {
+            "heading": "When carry capacity is limiting",
+            "paragraphs": [
+              "Choose a carrying perk when you repeatedly stop harvesting to unload; compare it with a Coin-priced backpack upgrade in the tools guide before committing scarce Gems."
+            ]
+          },
+          {
+            "heading": "When you farm mutations or Gems",
+            "paragraphs": [
+              "Follow the actual menu description and what you see drop in gameplay. Do not multiply an invented mutation odds formula by a card's percentage."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mutation-price",
+        "heading": "Price Differences: Mutation Luck 25 or 40?",
+        "intro": "The 25-versus-40 Gem disagreement is real in October guides and cannot be resolved using the developer's public game description alone.",
+        "paragraphs": [
+          "A dated screenshot analysed by chop-a-forest.wiki/gem-perks/ showed 40 Gems for Mutation Luck. Other secondary pages describe 25 Gems. The price may vary by state, level or update, but none of those reasons has been conclusively demonstrated for this difference.",
+          "Use the live card and its current upgrade level. If it shows 25, replace the example 40 with 25. If it shows 40, leave the observed default; if it shows another value or no value at all, replace the field or clear it. An empty chosen price blocks an incorrect result.",
+          "Never multiply a first-level price to claim a cost to max every level. Dated reference prices for one card do not establish a full level ladder. The calculator models a planned next purchase per selected item, not the entire upgrade tree."
+        ],
+        "subsections": [
+          {
+            "heading": "Why price snapshots differ",
+            "paragraphs": [
+              "The disagreement could be a version, account, perk level or reporting error. Without direct evidence, it is more accurate to show the discrepancy than assert an explanation."
+            ]
+          },
+          {
+            "heading": "When to revisit the live shop",
+            "paragraphs": [
+              "Check again after a game update, after purchasing a prior level or whenever an account shows a different cost; then update your planner inputs before evaluating a bundle."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "perks-sources",
+        "heading": "Gem Perk FAQ and Update Record",
+        "intro": "Independent sources checked October 18, 2026; calculations are local and remain usable when example prices become stale.",
+        "paragraphs": [
+          "Primary game identity and its developer are confirmed at the official Roblox place. Four-perk names, descriptions and sample prices are taken from the dated external guide at chop-a-forest.wiki/gem-perks/ and compared with chopaforest-wiki.wiki/guides/gem-perks/. No independent in-game account inspection was available in this edition.",
+          "A source label tells you what was seen and when, not that a price is valid today. Where the account display disagrees, your own game card has priority. Later game versions should be documented with new dated evidence before the published reference table is revised.",
+          "The tool stores no account ID or spending history. It computes only the provided integers in your browser and never triggers a purchase. Nothing on this page automatically claims or deducts currency."
+        ],
+        "subsections": [
+          {
+            "heading": "Source and last-checked label",
+            "paragraphs": [
+              "October 13 footage reference, checked against October 18 public community pages. Current user-card values are required for a real buying decision."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "How to get more Gems",
+            "slug": "free-gems",
+            "description": "Review actual lobby and gameplay reward methods."
+          },
+          {
+            "label": "Class cards also use Gems",
+            "slug": "classes",
+            "description": "Compare published class reference prices before spending."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "What are Gem Perks in Chop A Forest?",
+        "answer": "Third-party footage describes four permanent upgrades: Sell Value, Mutation Luck, Gem Value and Bigger Bundle. Check the current menu for your account."
+      },
+      {
+        "question": "What is the best Gem Perk to buy first?",
+        "answer": "It depends on your bottleneck: selling, tree Gems, carrying or mutation-focused play. No universal ROI order has been verified."
+      },
+      {
+        "question": "How much does Mutation Luck cost?",
+        "answer": "An October 13 footage frame showed 40 Gems, while other community guides reported 25. Enter your current in-game card price in the calculator."
+      },
+      {
+        "question": "Can I afford multiple Gem Perks?",
+        "answer": "Enter your actual balance, select perk cards and edit their costs. The calculator shows a valid total, remaining Gems or shortfall."
+      },
+      {
+        "question": "Do perk levels cost the same?",
+        "answer": "Some reports describe increasing costs. The shown reference values are not a full level price ladder."
+      },
+      {
+        "question": "Do the quoted percentages guarantee particular mutation rates?",
+        "answer": "No. A menu-description bonus is not measured proof of specific random outcomes, stacking rules or consistent Gem yields."
+      }
+    ],
+    "relatedSlugs": [
+      "free-gems",
+      "classes",
+      "tools-upgrades"
+    ],
+    "lastReviewed": "2026-10-18"
+  },
+  {
+    "enabled": true,
+    "slug": "tools-upgrades",
+    "pageType": "guide",
+    "navLabel": "Tools",
+    "title": "Chop A Forest Tools – Prices, Upgrades & Buy Order",
+    "description": "Compare Chop A Forest tools, shop prices, currencies and unlocks. Use a simple upgrade planner to check what you can afford next.",
+    "navVisible": true,
+    "hero": {
+      "eyebrow": "COIN COSTS • ROBUX • TRIALS",
+      "heading": "Chop A Forest Tools & Upgrade Guide",
+      "lead": "Chop A Forest tools use different currencies and durations: an early Axe is reported at 125–150 Coins, while Chainsaw and Vacuum products include Robux or timed offers. Compare them before spending."
+    },
+    "sections": [
+      {
+        "id": "tools-prices",
+        "heading": "Chop A Forest Tools: Full Price Comparison",
+        "intro": "The reference list separates cutting tools, carrying upgrades, vehicles and timed offers instead of treating every item as the same kind of purchase.",
+        "paragraphs": [
+          "The developer's official description confirms collecting logs, earning Coins, buying tools and upgrading them. It does not contain a public fixed shop price list. The numbers below come from dated October player-guide observations and should be checked in the live store before purchase.",
+          "Axe prices conflict: footage-based guides report 150 Coins, while a public database calculated 125 Coins. Both are dated references, not proof of today's cost. The interactive planner starts with the 150-Coin example but accepts an edited current cost.",
+          "The Coins list includes transport and carrying milestones as well as cutters because faster chopping alone does not solve every bottleneck. These items may be found in different menus, and access can depend on a forest clear or prerequisite level.",
+          "Chainsaw and Vacuum are not simply the next Coin prices after the Axe. Reports include Robux products and a five-minute saw trial. A timed trial, one-run offer and forever pass have different meanings; a number without a currency and duration is not useful buying guidance."
+        ],
+        "subsections": [
+          {
+            "heading": "Coins versus Robux versus trial tools",
+            "paragraphs": [
+              "Use Coins from selling logs for the items whose live cards show Coins. Robux is the platform purchase currency. A trial is temporary access, and its duration must be read separately from the offer price.",
+              "The calculator cannot deduct a Robux cost from a Coin wallet. If your desired item is a pass, read the offer as a separate Roblox transaction."
+            ]
+          },
+          {
+            "heading": "Shop location, access and duration",
+            "paragraphs": [
+              "The Tool Shop sells usable equipment, the upgrade panel changes repeated stats and the garage handles transport offers in player reports. Read whether the current card requires an earlier purchase or another forest unlock."
+            ]
+          }
+        ],
+        "table": {
+          "caption": "Observed October 2026 examples • prices and unlocks can change",
+          "columns": [
+            "Item",
+            "Role",
+            "Published price",
+            "Currency",
+            "Shop / access",
+            "Caution"
+          ],
+          "rows": [
+            [
+              "Fists",
+              "Cutting",
+              "Free starting action",
+              "—",
+              "Start of run",
+              "Hands, no shop purchase"
+            ],
+            [
+              "Axe",
+              "Cutting",
+              "125 or 150 reported",
+              "Coins",
+              "Tool Shop",
+              "Check live Axe card; dated prices conflict"
+            ],
+            [
+              "First backpack tier",
+              "Carry",
+              "175 observed",
+              "Coins",
+              "Capacity/upgrade menu",
+              "Repeatable levels may be different costs"
+            ],
+            [
+              "Car",
+              "Transport",
+              "500 observed",
+              "Coins",
+              "Garage / progress",
+              "Availability may require unlock"
+            ],
+            [
+              "Second backpack tier",
+              "Carry",
+              "750 observed",
+              "Coins",
+              "Upgrade menu",
+              "Later tier, not same as first"
+            ],
+            [
+              "Cutting-radius level",
+              "Upgrade",
+              "1,000 observed",
+              "Coins",
+              "Tab upgrades",
+              "Check previous levels and selected tool"
+            ],
+            [
+              "Dynamite",
+              "Cutting",
+              "2,500 observed",
+              "Coins",
+              "Tool Shop",
+              "Shop offer and currency can change"
+            ],
+            [
+              "Later vehicle",
+              "Transport",
+              "2,800 observed",
+              "Coins",
+              "Garage / area access",
+              "Not guaranteed first available"
+            ],
+            [
+              "Large-capacity bag",
+              "Carry",
+              "15,000 observed",
+              "Coins",
+              "Later upgrade",
+              "Look at current stage requirements"
+            ],
+            [
+              "Chainsaw / Trial Saw",
+              "Cutting",
+              "Robux / timed trial",
+              "Robux",
+              "Tool Shop / store",
+              "A trial is not permanent"
+            ],
+            [
+              "Vacuum",
+              "Collection",
+              "Robux purchase reported",
+              "Robux",
+              "Tool Shop / store",
+              "Collects logs; does not cut trees"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "buy-order",
+        "heading": "Best Upgrade Order for Beginners",
+        "intro": "Follow the real cost on your screen, then spend to remove your slowest part of the chop–haul–sell loop.",
+        "paragraphs": [
+          "A fresh player can begin by chopping without a purchased tool. In several observed sessions, the first Axe cost 150 Coins and visibly improved cutting speed. A public price calculator disagreed at 125, so the exact budget must be based on the current card.",
+          "If you cut slowly but can already carry your usual load, a cutter or damage upgrade might improve your run. If your bag fills immediately, a carrying upgrade may yield a more noticeable difference. If travel to the seller is the costly part, a vehicle is worth comparing once unlocked.",
+          "The frequently cited early example ladder is 150 Coins for an Axe, 175 for a first bag, 500 for a car and 750 for another bag tier. These are observed milestones from dated guides, not a rule that all players must buy them in that exact order.",
+          "Later examples include 1,000 for a radius upgrade, 2,500 for Dynamite, around 2,800 for a later vehicle and 15,000 for a large bag. A missing unlock or a different per-level price can make that apparent ladder irrelevant to your current run."
+        ],
+        "subsections": [
+          {
+            "heading": "Starting with fists and the first Axe",
+            "paragraphs": [
+              "First earn Coins from a log sale. Check the Shop's currently displayed Axe price and avoid buying an unrelated Robux option unless you intend to spend Robux."
+            ]
+          },
+          {
+            "heading": "When backpack capacity matters more than damage",
+            "paragraphs": [
+              "A full carry limit creates more seller trips. Increase carrying space or use transport when your chopping speed already exceeds the rate at which you can sell."
+            ]
+          }
+        ],
+        "steps": [
+          {
+            "heading": "Get Coins",
+            "description": "Cut logs, sell them and check the Coin wallet."
+          },
+          {
+            "heading": "Compare live cards",
+            "description": "Read cost, currency, duration and unlock requirement for the next purchase."
+          },
+          {
+            "heading": "Buy for the bottleneck",
+            "description": "Choose a cutter, capacity upgrade or transport option you can actually access."
+          }
+        ]
+      },
+      {
+        "id": "planner",
+        "heading": "Tool Upgrade Planner",
+        "intro": "Choose your Coin budget, one reported Coin-priced target and the price shown by your current game. The tool calculates a shortfall or leftover Coins.",
+        "paragraphs": [
+          "The planner makes no request to the Roblox servers. Enter a nonnegative integer for your Coin wallet and pick a target from the dated Coin list. Correct the price field when your shop differs from the example. If either number is empty, fractional or negative, no affordability result is shown.",
+          "For the Axe, a 100-Coin wallet against an entered 150-Coin price is 50 short; a 200-Coin wallet has 50 remaining. If you instead look at a Chainsaw Robux pass, you must use a separate Robux balance or simply check the Roblox confirmation screen; subtracting it from Coins would be meaningless.",
+          "The result says only whether a displayed Coin amount fits your budget. It does not pretend to know whether your forest, item level or area has unlocked the product. Some next-level prices increase with every purchase; the observed list is not a multi-level total.",
+          "Treat the displayed example value as replaceable. If you cannot find a current price at all, leave it blank and wait until you can inspect the shop. The planner must report that the price is missing, not treat it as zero."
+        ],
+        "subsections": [
+          {
+            "heading": "Enter your Coins budget",
+            "paragraphs": [
+              "Use Coins earned from log sales, not your Gems or Robux balance. Enter a valid whole number so the planner can compare like with like."
+            ]
+          },
+          {
+            "heading": "Select your next shop item and adjust cost",
+            "paragraphs": [
+              "Choose a listed example item, read the unit, edit the default cost and inspect the budget difference."
+            ]
+          },
+          {
+            "heading": "Understand access gates and trial limits",
+            "paragraphs": [
+              "Affordability cannot prove the purchase is unlocked. Check area completion, tool ownership, per-level upgrades and purchase duration."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "special-tools",
+        "heading": "Axe, Chainsaw and Special Tools",
+        "intro": "Different tools affect cutting and collection in different ways, and similar-looking store entries may not grant identical ownership.",
+        "paragraphs": [
+          "The Axe is the early cutting upgrade whose public Coin quotes vary between 125 and 150. One guide reports a noticeably faster chop after buying it. A live price card matters more than an old screenshot or search snippet.",
+          "Chainsaw guides report a temporary trial, including a five-minute saw trial, alongside distinct Robux product options. That does not prove that a current permanent Chainsaw costs Coins, and it does not make a trial into a permanent unlock.",
+          "The Vacuum is described as gathering dropped logs rather than chopping the tree itself. It is useful when collection is slow after the cutting is complete. Robux options are reported, so it should not be inserted into a Coin-only saving ladder.",
+          "Dynamite is described as an explosive chopping option with a Coin example around 2,500; observed footage also includes Robux alternatives. These are different offer types. Confirm the exact current Tool Shop wording before purchasing.",
+          "Other advanced names such as Flamethrower appear in third-party reference lists. Without a clearly supported live price, shop and durability, do not use such entries to recommend a guaranteed Coin farming route."
+        ],
+        "subsections": [
+          {
+            "heading": "Axe price across dated sources",
+            "paragraphs": [
+              "A 125-Coin computed dataset and 150-Coin recorded shop observations conflict. The calculator uses a changeable 150 example, not a fixed official price."
+            ]
+          },
+          {
+            "heading": "Chainsaw trials versus purchase",
+            "paragraphs": [
+              "A trial duration is part of the product identity. Check whether the game offers one run, several minutes or a permanent purchase."
+            ]
+          },
+          {
+            "heading": "Collection tools and explosive options",
+            "paragraphs": [
+              "Vacuum handles collection; Dynamite destroys trees. Compare those purposes with your current bottleneck rather than sorting only by advertised price."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "upgrades-progress",
+        "heading": "Tool Upgrades and Forest Progression",
+        "intro": "The menu that improves a tool is not necessarily the shop that sells the base tool; that distinction prevents wasted purchases.",
+        "paragraphs": [
+          "Recorded sessions show a Tab upgrade menu with multiple repeatable stat lines such as damage, speed, grasp or carry capacity and radius. They can rise independently, and costs commonly increase by level. Do not multiply one observed level cost by several future levels as if the price were constant.",
+          "A required base tool may need to be owned before a related upgrade is available. Reports also describe equipment becoming available only after completing a current forest or unlocking another area. Budget and access are separate checks.",
+          "Saved-run behavior is mentioned in the official Roblox description, but the duration of individual Robux products and trial tools still requires explicit inspection. A run that saves does not guarantee every consumable or current-run purchase persists.",
+          "Before tapping a level upgrade, read the selected line carefully. An incorrect purchase may spend Coins on a stat you did not intend to raise. Verify the result and new balance before buying another level."
+        ],
+        "subsections": [
+          {
+            "heading": "Unlock the base tool before upgrading",
+            "paragraphs": [
+              "When an upgrade is locked, inspect the tool requirement, earlier level and current area. Do not assume a missing button is a bug that a guide can bypass."
+            ]
+          },
+          {
+            "heading": "Coins upgrades, area access and save behavior",
+            "paragraphs": [
+              "The game's own card decides when progress is required and whether a product lasts for one game, several minutes or beyond a run."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tool-notes",
+        "heading": "Latest Tool Price Notes",
+        "intro": "Public sources dated October 12–18, 2026 are useful reference points, but the live Roblox shop is definitive for a spending decision.",
+        "paragraphs": [
+          "Examples are compared with chopaforest.wiki/tools/chop-a-forest-tool-progression, chopaforest.wiki/tools/chop-a-forest-tools-list and chopaforest-wiki.wiki/guides/tools-and-upgrades/. Separate numerical views from an AwesWikis tools dataset illustrate why prices should not be presented as universal.",
+          "For a correction, capture the item name, displayed price, currency symbol, purchase duration, prior unlock and date in the same evidence frame. Do not publish an up-to-date guarantee without that evidence. This edition has not established a verified live item API.",
+          "If the game updates or the class/upgrade shop changes, the first task is to revise the dated reference list and explain the conflict. This page remains useful because its input-driven calculation follows the numbers the player actually enters."
+        ],
+        "subsections": [
+          {
+            "heading": "Where to check the live price card",
+            "paragraphs": [
+              "Open the appropriate Tool Shop, garage or Tab upgrade panel, read every qualifier and then update the price input here."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Choose a class for long-term progress",
+            "slug": "classes",
+            "description": "Separate Gem cards from Coin upgrade decisions."
+          },
+          {
+            "label": "Budget permanent Gem perks",
+            "slug": "gem-perks",
+            "description": "Compare permanent upgrade goals."
+          },
+          {
+            "label": "Find free Gems",
+            "slug": "free-gems",
+            "description": "Avoid confusing free rewards with Coin earnings."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "What tool should I buy first in Chop A Forest?",
+        "answer": "An early Axe is a widely documented first purchase after your initial Coin sale; confirm the live cost and compare whether carry capacity is your bigger bottleneck."
+      },
+      {
+        "question": "How much does the Axe cost?",
+        "answer": "Dated sources disagree: 125 in one calculated reference and 150 Coins in recorded shop visits. Read your current Shop card."
+      },
+      {
+        "question": "How do I upgrade tools?",
+        "answer": "Buy eligible base equipment in the Tool Shop and use the upgrade panel for repeatable stats. Each line can have prerequisites and its own rising price."
+      },
+      {
+        "question": "How much is the Chainsaw?",
+        "answer": "Some offers are Robux products and there is a reported timed trial; do not assume a current permanent Coin price without checking the actual card."
+      },
+      {
+        "question": "Are Robux tools permanent?",
+        "answer": "Not necessarily. Read whether the offer is a timed trial, a one-run product or a Forever pass before payment."
+      },
+      {
+        "question": "Why is my upgrade locked?",
+        "answer": "Check the base tool, previous upgrade level, area unlock and currency. A budget calculation does not bypass gameplay requirements."
+      }
+    ],
+    "relatedSlugs": [
+      "classes",
+      "gem-perks",
+      "free-gems"
+    ],
+    "lastReviewed": "2026-10-18"
+  }
+]

@@ -2,29 +2,209 @@
   "enabled": true,
   "slug": "",
   "pageType": "home",
-  "title": "Chop A Forest Guide",
-  "description": "Guides, walkthroughs, tips, updates, and reference information for Chop A Forest.",
+  "title": "Chop A Forest Wiki – Classes, Gems & Tools Guide",
+  "description": "Chop A Forest Roblox wiki with class comparisons, free gem methods, permanent perk planning, tool prices and upgrade guides. Find the right Roblox game.",
   "navVisible": true,
   "hero": {
-    "eyebrow": "Game guide",
-    "heading": "Chop A Forest",
-    "lead": "Guides, walkthroughs, tips, updates, and reference information for Chop A Forest.",
-    "supportingText": "Browse current game information and practical guides.",
+    "eyebrow": "INDEPENDENT ROBLOX PLAYER GUIDE",
+    "heading": "Chop A Forest Wiki & Roblox Game Guide",
+    "lead": "Chop A Forest is a Roblox tree-cutting game by WCT Capital. Break trees, collect logs, sell them for Coins and invest in tools and classes.",
+    "supportingText": "Use the four focused guides below for class decisions, free Gems, permanent perks and the right next tool. This is an independent fan guide, not the official game.",
+    "primaryLink": {
+      "label": "Compare classes",
+      "slug": "classes"
+    },
     "secondaryLink": {
-      "label": "Open official game page",
-      "url": "https://www.roblox.com/games/103363457515322"
+      "label": "Play Chop A Forest on Roblox",
+      "url": "https://www.roblox.com/games/103363457515322/Chop-A-Forest"
     }
   },
   "sections": [
     {
-      "id": "start-here",
-      "heading": "Game information",
+      "id": "what-is",
+      "heading": "What Is Chop A Forest on Roblox?",
+      "intro": "The game is a simulation experience on Roblox. Its official description establishes a chop–collect–sell–upgrade progression loop and says solo and friend runs save.",
       "paragraphs": [
-        "Current Chop A Forest guides and reference information will be published here."
+        "The correct official Roblox place is 103363457515322 and the credited developer is WCT Capital. The official listing is the safest way to identify the game: fan-made pages, similarly named experiences and standalone sites are not evidence of an official website or partnership.",
+        "Tree cutting earns logs, not immediate spendable Coins: you first gather wood and sell it. Coin-priced items are distinct from Gems used in reported permanent perks and class cards, and Robux purchases are yet another currency. Always read the wallet, item name and purchase terms before accepting a price.",
+        "The Roblox listing says SOLO & FRIEND RUNS SAVE. That establishes the existence of saving for solo and friend runs, but does not prove that every tool, timed trial or bought vehicle carries forward. Look at the card wording for each unlock.",
+        "The independent coverage on this site is organized around actual tasks rather than a list of unrelated keywords. Each of the four linked pages has a narrower job: select a class, get Gems, budget permanent perks or buy tools."
+      ],
+      "subsections": [
+        {
+          "heading": "The core chopping and selling loop",
+          "paragraphs": [
+            "Start with a tree you can cut, collect the logs it drops, locate the game’s selling point and convert your load into Coins. Repeat with a more useful tool or upgraded carrying capacity rather than assuming one more expensive weapon is always the best value.",
+            "If you can cut far faster than you can carry or sell, extra damage may not improve your earning loop as much as a better bag or transport. If you spend most of your time cutting, the initial axe or damage-related upgrade is a more relevant comparison. This is a decision heuristic, not an official damage formula."
+          ]
+        },
+        {
+          "heading": "Solo and friends: what the official listing confirms",
+          "paragraphs": [
+            "The developer says solo and friend runs save. A run may still contain products labelled current game, one run, timed trial or permanent: these categories must not be combined.",
+            "Before leaving a session, check the exact inventory and shop offer wording. A saved run should not be interpreted as proof that a short-term chain-saw trial remains available indefinitely."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Official Roblox game",
+          "slug": "",
+          "description": "Use the official button above to open the actual Roblox experience."
+        }
+      ]
+    },
+    {
+      "id": "choose-guide",
+      "heading": "Choose What You Need Next",
+      "intro": "Each guide answers a separate player question, so you can go directly to the matching table or calculator instead of reading the whole wiki.",
+      "paragraphs": [
+        "If you are choosing among class perks, go to the class comparison: the prices in community reports need their own date and currency label. If you are short of Gems, solve the earning problem first; the free-rewards page explains what actually requires a claim and how to diagnose a missing group reward.",
+        "Once you have Gems, the four permanent perk descriptions are more useful than an unconditional tier list: the perk planner totals selected costs from your live shop values. If your immediate problem is slow chopping or hauling, use the tools guide to compare Coin purchases and Robux products without mixing their budgets."
+      ],
+      "subsections": [
+        {
+          "heading": "Compare Chop A Forest classes",
+          "paragraphs": [
+            "The Classes page collects the published Woodcutter-to-Clawman roster, explains the evidence limits for values and filters candidates by a Gem budget and goal. The rating is editorial, not an official live meta."
+          ]
+        },
+        {
+          "heading": "Get free gems and claim rewards",
+          "paragraphs": [
+            "The rewards guide starts with the lobby Daily Reward and group checklist, then separates gameplay drops and forest-clearing rewards from purchases. It does not promise a payout from an unverified code."
+          ]
+        },
+        {
+          "heading": "Plan permanent gem perks",
+          "paragraphs": [
+            "Compare Sell Value, Mutation Luck, Gem Value and Bigger Bundle, then choose desired upgrades and enter the prices shown in your current account. The calculator reports remaining Gems or a shortfall."
+          ]
+        },
+        {
+          "heading": "Compare tools and upgrades",
+          "paragraphs": [
+            "The tool guide includes early Coin targets, tool duration, the upgrade menu and a price-adjustable affordability calculation. Coins cannot be deducted from a Robux-only offer."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Classes & Tier List",
+          "slug": "classes",
+          "description": "Compare the reported ten-class roster, costs and abilities; filter by Gem budget."
+        },
+        {
+          "label": "Free Gems & Rewards",
+          "slug": "free-gems",
+          "description": "Find lobby claims, group requirements and game-earned Gems without bogus codes."
+        },
+        {
+          "label": "Gem Perks & Budget Planner",
+          "slug": "gem-perks",
+          "description": "Check four permanent perks and calculate a purchase budget using your own prices."
+        },
+        {
+          "label": "Tools & Upgrades",
+          "slug": "tools-upgrades",
+          "description": "Compare Coins, Robux and time-limited tools, then calculate your next purchase."
+        }
+      ]
+    },
+    {
+      "id": "beginner-route",
+      "heading": "Chop A Forest Beginner Route",
+      "intro": "Use this order as a practical checklist, adjusting whenever the shop or your current run differs from older footage.",
+      "paragraphs": [
+        "First, visit the official game link, begin a run and find a tree that your starting hands can damage. Cut enough to create a saleable load, collect it and locate the selling device. Make sure the display shows Coins added after selling; logs carried in inventory are not yet a purchase budget.",
+        "Next, inspect the tool merchant and the upgrade panel before spending. In October player footage, an Axe appeared at 150 Coins, while a separate community database calculated 125. The discrepancy is precisely why the live card wins. Do not blindly save to a number copied from a search result.",
+        "Once cutting no longer feels like the slowest part, watch the length of your hauling trips. Observed sessions describe larger backpacks, vehicles and transport upgrades. A player with a small bag but fast cutting equipment may benefit from increasing capacity before chasing a costly special tool.",
+        "Only after reviewing the Coin loop should you shift attention to Gems. The reported class shop and permanent perk menu serve different choices. Claim free eligible rewards and compare a class card with a perk in the relevant guide; one does not automatically replace the other."
+      ],
+      "subsections": [
+        {
+          "heading": "First sale and first tool decision",
+          "paragraphs": [
+            "Read the exact cost and currency on the live tool card; buy only if you have that balance. Early observed footage describes the Axe as a first upgrade, but the precise price differs between dated third-party sources."
+          ]
+        },
+        {
+          "heading": "When to change a class or buy a permanent perk",
+          "paragraphs": [
+            "A class card may address several attributes at once while a permanent perk tackles one bottleneck. Compare actual effects and available Gems instead of assuming that the highest-rarity option is automatically affordable or optimal."
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "heading": "Chop and collect",
+          "description": "Cut a tree and gather the logs. The official description confirms logs are the starting resource."
+        },
+        {
+          "heading": "Sell for Coins",
+          "description": "Find the selling point and verify the Coin balance increased before selecting a Coin-priced item."
+        },
+        {
+          "heading": "Inspect the next purchase",
+          "description": "Check its cost, currency, duration and unlock gate, and compare tool, carry and class priorities."
+        }
+      ],
+      "links": [
+        {
+          "label": "Check the tool upgrade route",
+          "slug": "tools-upgrades",
+          "description": "See the observed first Axe, bag and transport milestones."
+        }
+      ]
+    },
+    {
+      "id": "facts",
+      "heading": "Game Facts, Sources and Updates",
+      "intro": "Official identity and gameplay come from Roblox; shop-level numbers shown by independent publishers remain dated observations.",
+      "paragraphs": [
+        "Official Roblox source: https://www.roblox.com/games/103363457515322/Chop-A-Forest. Publisher credit and the core loop were checked on October 18, 2026. Those facts are materially different from the transient number of live players, visit counters or a promised event; this guide does not cache those changing figures as current.",
+        "Independent reference samples: chop-a-forest.wiki and chopaforest-wiki.wiki published early footage-based class, Gem and tool notes in October 2026. They are useful for finding visible menus and comparing reports, not proof that a later account or updated server uses identical values.",
+        "All numerical examples in the detailed guides are tagged as observed or reported, with the check date where possible. A conflicting value is treated as a reason to double-check the real shop. Our calculators use your inputs, so they work even when the game changes a cost.",
+        "We do not embed an unauthorized Roblox play iframe, guarantee free currency delivery, claim that this is an official wiki or invent a save system. If the developer changes a mechanism, the first step is to recheck the official listing and the live purchase card."
+      ],
+      "subsections": [
+        {
+          "heading": "Official Roblox links",
+          "paragraphs": [
+            "Visit the developer's Roblox experience for the live game, account-specific shop offers and the current creator credit. Do not provide credentials to a third-party guide."
+          ]
+        },
+        {
+          "heading": "How guide data is verified",
+          "paragraphs": [
+            "We separate three levels: official platform description, dated third-party observed menus and advice derived from comparisons. Advice and arithmetic are not evidence of a new gameplay rule."
+          ]
+        }
       ]
     }
   ],
-  "faq": [],
+  "faq": [
+    {
+      "question": "Is Chop A Forest a Roblox game?",
+      "answer": "Yes. The Roblox place is 103363457515322, credited to WCT Capital. Use the official Play link above."
+    },
+    {
+      "question": "Who made Chop A Forest?",
+      "answer": "The official Roblox experience credits WCT Capital as its creator, as checked on October 18, 2026."
+    },
+    {
+      "question": "How do you get started in Chop A Forest?",
+      "answer": "Break trees, collect their logs, sell the logs for Coins, then compare tools and upgrades. That is the loop described by the developer."
+    },
+    {
+      "question": "Where can I compare classes?",
+      "answer": "Open the Classes & Tier List page to compare dated class prices, abilities and a Gem-budget filter."
+    },
+    {
+      "question": "Where can I get Gems and plan upgrades?",
+      "answer": "Use the Free Gems guide for reward steps and the Gem Perks page to plan purchases with your own in-game prices."
+    }
+  ],
   "screenshots": [],
   "lastReviewed": "2026-10-18"
 }

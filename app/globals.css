@@ -529,3 +529,36 @@ html[data-skin="horror"] .skin-article-hero { border: 0; min-height: 28vh; }
   .skin-nav { display: none; width: 100%; }
   .skin-nav.is-open { display: flex; flex-direction: column; padding-bottom: .8rem; }
 }
+
+/* Public game guide and calculator content within the preserved block-wiki skin. */
+body[data-fixed-template="block-wiki"] .launch-home-copy, body[data-fixed-template="block-wiki"] .launch-home-section {max-width:1100px;margin:24px auto;padding:12px 22px;}
+.launch-home-copy h2,.launch-home-copy h3,.template-inner-article h2,.template-inner-article h3 {margin:1.25em 0 .45em;line-height:1.24}
+.launch-home-copy p,.template-inner-article p{line-height:1.8;margin:.75em 0}
+.launch-home-copy a,.template-inner-article a,.launch-footer-nav a{text-underline-offset:3px}
+.launch-subsection{padding:8px 0 12px}.launch-subsection h3{font-size:1.1rem}
+.launch-table-wrap{overflow-x:auto;max-width:100%;margin:22px 0;border:1px solid #aabb9e;border-radius:8px}
+.launch-table-wrap table{width:100%;min-width:540px;border-collapse:collapse;font-size:14px}
+.launch-table-wrap caption{text-align:left;padding:12px;font-weight:700;background:#e4eadf;color:#203522}
+.launch-table-wrap th,.launch-table-wrap td{padding:10px 12px;border-bottom:1px solid #ccdbca;text-align:left;vertical-align:top}
+.launch-table-wrap thead th{background:#eff4ec;color:#233927}
+.launch-table-wrap tbody tr:nth-child(even){background:#f6f8f4}
+.launch-steps{padding-left:24px;margin:14px 0}.launch-steps li{margin:12px 0;line-height:1.7}
+.launch-related{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:20px 0}
+.launch-related a{padding:14px;border:1px solid #aabb9e;border-radius:6px;background:#f0f6ee;color:#17452b;display:flex;flex-direction:column;gap:6px}
+.launch-related span{font-size:13px;line-height:1.5}
+.launch-tool{background:#eef5e9;color:#19341e;border:2px solid #527f41;border-radius:10px;padding:22px;margin:20px 0 28px}
+.launch-tool h2{font-size:1.45rem;margin:0 0 10px}.launch-tool p{margin:8px 0 14px}
+.launch-fields{display:flex;flex-wrap:wrap;gap:14px;align-items:end}
+.launch-fields label,.launch-perk label{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:700;flex:1;min-width:175px}
+.launch-fields input,.launch-fields select,.launch-perk input[type="number"]{width:100%;min-height:42px;padding:8px 10px;background:white;color:#182e1b;border:1px solid #8da783;border-radius:5px;font:inherit}
+.launch-fields .launch-check,.launch-perk .launch-check{flex-direction:row;align-items:center;gap:8px}
+.launch-check input[type="checkbox"]{width:19px;height:19px;accent-color:#467637}
+.launch-perks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+.launch-perk{display:flex;gap:12px;align-items:center;justify-content:space-between;border:1px solid #b4c7ae;border-radius:6px;padding:12px;flex-wrap:wrap}
+.launch-result{background:#d5e6cb;border-left:4px solid #467637;padding:12px 14px;font-weight:700}
+.launch-caption{font-size:13px;color:#35563a}.launch-reset{border:1px solid #356e3b;border-radius:5px;padding:9px 14px;background:#fff;color:#1c4a26;cursor:pointer}
+.launch-sources{background:#f3f6ee;padding:16px;margin:20px 0;border-top:2px solid #bed0b2}
+.launch-sources ul{padding-left:24px}.launch-sources li{margin:8px 0}
+.launch-footer-nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:16px;border-top:1px solid #aabb9e;margin-top:15px;font-size:14px}
+[hidden]{display:none!important}
+@media(max-width:680px){.launch-tool{padding:14px}.launch-perks{grid-template-columns:1fr}.launch-table-wrap table{min-width:600px}.launch-home-copy{padding:8px 14px}}

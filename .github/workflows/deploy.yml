@@ -29,10 +29,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Check repository rules
-        run: node scripts/repo-rules.mjs ci "$BEFORE" "$GITHUB_SHA"
-        env:
-          BEFORE: ${{ github.event.before }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22

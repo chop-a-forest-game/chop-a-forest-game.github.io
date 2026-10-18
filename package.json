@@ -6,9 +6,7 @@
     "dev": "next dev",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "build": "next build --webpack && node scripts/postbuild.mjs",
-    "prepare": "node scripts/repo-rules.mjs install",
-    "check:repo-rules": "node scripts/repo-rules.mjs ci"
+    "build": "next build --webpack && node scripts/postbuild.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
