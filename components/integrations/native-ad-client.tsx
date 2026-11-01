@@ -9,21 +9,31 @@ export function NativeAdClient({ scriptUrl, containerId }: { scriptUrl: string; 
     const host = hostRef.current;
     if (!host) return;
 
-    const container = document.createElement("div");
-    container.id = containerId;
-    host.appendChild(container);
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = scriptUrl;
-    script.dataset.cfasync = "false";
-    script.dataset.gameWikiNativeAd = containerId;
-    host.insertBefore(script, container);
-
+    // Defer to the next frame to avoid loading twice on React StrictMode's
+    // immediate effect cleanup/replay. The container is already in the DOM.
+    let script: HTMLScriptElement | null = null;
+    const frame = requestAnimationFrame(() => {
+      if (!host.isConnected || host.querySelector('script[data-caf-native]')) return;
+      script = document.createElement("script");
+      script.async = true;
+      script.src = scriptUrl;
+      script.setAttribute("data-cfasync", "false");
+      script.setAttribute("data-caf-native", "true");
+      host.appendChild(script);
+    });
     return () => {
-      host.replaceChildren();
+      cancelAnimationFrame(frame);
+      script?.remove();
+      // React owns the native container element; do not clear it while mounted.
     };
-  }, [containerId, scriptUrl]);
+  }, [scriptUrl, containerId]);
 
-  return <div ref={hostRef} data-native-ad-slot />;
+  return (
+    <aside className="caf-ad caf-native" aria-label="Sponsored advertising" data-native-ad-slot>
+      <span className="caf-ad-label">Advertisement · Sponsored</span>
+      <div ref={hostRef} className="caf-native-content">
+        <div id={containerId} />
+      </div>
+    </aside>
+  );
 }

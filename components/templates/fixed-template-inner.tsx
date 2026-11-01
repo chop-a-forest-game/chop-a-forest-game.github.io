@@ -1,6 +1,7 @@
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { LaunchToolsRuntime } from "@/components/site/launch-tools-runtime";
 import { NativeAdSlot } from "@/components/integrations/native-ad-slot";
+import { ResponsiveBannerAd } from "@/components/integrations/responsive-banner-ad";
 import { JsonLd } from "@/components/site/json-ld";
 import type { SeoPageDefinition } from "@/config/types";
 import { getRelatedPages } from "@/content/registry";
@@ -16,7 +17,7 @@ function articleInner(page: SeoPageDefinition): string {
     const steps = section.steps?.length ? `<ol class="launch-steps">${section.steps.map((s) => `<li><strong>${esc(s.heading)}</strong> ${esc(s.description)}</li>`).join("")}</ol>` : "";
     const links = section.links?.length ? `<nav class="launch-related" aria-label="Related guides">${section.links.filter((l) => l.slug).map((l) => `<a href="${esc(routePath(l.slug))}"><strong>${esc(l.label)}</strong><span>${esc(l.description || "")}</span></a>`).join("")}</nav>` : "";
     return `<section id="${esc(section.id)}"><h2>${esc(section.heading)}</h2>${paragraphs}${table}${subsections}${steps}${links}</section>`;
-  }).join("");
+  });
   const faq = page.faq?.length ? `<section id="faq"><h2>Frequently Asked Questions</h2>${page.faq.map((item) => `<div class="launch-subsection"><h3>${esc(item.question)}</h3><p>${esc(item.answer)}</p></div>`).join("")}</section>` : "";
   const related = getRelatedPages(page);
   const relatedHtml = related.length ? `<nav class="launch-related" aria-label="Related guides">${related.map((item) => `<a href="${esc(routePath(item.slug))}">${esc(item.navLabel)}</a>`).join("")}</nav>` : "";
@@ -27,10 +28,13 @@ function articleInner(page: SeoPageDefinition): string {
   const perks = "<section class=\"launch-tool\" id=\"gem-budget-planner\" aria-label=\"Gem budget planner\"><h2>Interactive Gem Budget Planner</h2><p>Example prices come from one October 13 menu, not today's live shop. Edit every cost before making a purchase. Calculations stay in this browser.</p><div class=\"launch-fields\"><label>Current Gem balance<input id=\"perk-balance\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"100\"></label></div><div class=\"launch-perks\"><div class=\"launch-perk\"><label class=\"launch-check\"><input type=\"checkbox\" data-perk-choice=\"sell\"> Sell Value</label><label>Gem cost<input aria-label=\"Sell Value current Gem cost\" data-perk-price=\"sell\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"25\"></label></div><div class=\"launch-perk\"><label class=\"launch-check\"><input type=\"checkbox\" data-perk-choice=\"mutation\"> Mutation Luck</label><label>Gem cost<input aria-label=\"Mutation Luck current Gem cost\" data-perk-price=\"mutation\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"40\"></label></div><div class=\"launch-perk\"><label class=\"launch-check\"><input type=\"checkbox\" data-perk-choice=\"gem\"> Gem Value</label><label>Gem cost<input aria-label=\"Gem Value current Gem cost\" data-perk-price=\"gem\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"50\"></label></div><div class=\"launch-perk\"><label class=\"launch-check\"><input type=\"checkbox\" data-perk-choice=\"bundle\"> Bigger Bundle</label><label>Gem cost<input aria-label=\"Bigger Bundle current Gem cost\" data-perk-price=\"bundle\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"30\"></label></div></div><p id=\"perk-result\" class=\"launch-result\" role=\"status\" aria-live=\"polite\">Select a perk to start.</p><button type=\"button\" class=\"launch-reset\" id=\"perk-reset\">Reset observed examples</button><p class=\"launch-caption\">Worked example: select Sell Value (25), Gem Value (50) and Bigger Bundle (30) with 100 Gems. Total 105 Gems, shortfall 5. Mutation Luck was also reported at 25 in another guide.</p></section>";
   const tools = "<section class=\"launch-tool\" id=\"tool-budget-planner\" aria-label=\"Tool upgrade planner\"><h2>Coin Budget & Next Tool Planner</h2><p>Choose your next item and replace the October example with the price shown in your own Tool Shop. A budget check is not an unlock check.</p><div class=\"launch-fields\"><label>Your Coins<input id=\"tool-balance\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"100\"></label><label>Target item<select id=\"tool-target\"><option value=\"axe\" data-cost=\"150\" data-currency=\"Coins\" data-gate=\"Check live shop; 125 also reported\">Axe (Coins)</option><option value=\"bag\" data-cost=\"175\" data-currency=\"Coins\" data-gate=\"Check current upgrade tier\">First backpack (Coins)</option><option value=\"car\" data-cost=\"500\" data-currency=\"Coins\" data-gate=\"May require garage / unlock\">Car (Coins)</option><option value=\"bag2\" data-cost=\"750\" data-currency=\"Coins\" data-gate=\"Requires prior tier\">Second backpack (Coins)</option><option value=\"radius\" data-cost=\"1000\" data-currency=\"Coins\" data-gate=\"Upgrade line / prerequisites\">Cutting radius (Coins)</option><option value=\"dynamite\" data-cost=\"2500\" data-currency=\"Coins\" data-gate=\"Check shop and unlock\">Dynamite (Coins)</option><option value=\"vehicle\" data-cost=\"2800\" data-currency=\"Coins\" data-gate=\"Area / progress gate\">Later vehicle (Coins)</option><option value=\"bigbag\" data-cost=\"15000\" data-currency=\"Coins\" data-gate=\"Later upgrade level\">Large bag (Coins)</option><option value=\"chainsaw\" data-cost=\"\" data-currency=\"Robux\" data-gate=\"Robux or trial, not comparable to Coins\">Chainsaw / timed trial (Robux)</option></select></label><label>Current card cost<input id=\"tool-cost\" type=\"number\" inputmode=\"numeric\" min=\"0\" step=\"1\" value=\"150\"></label></div><p id=\"tool-result\" class=\"launch-result\" role=\"status\" aria-live=\"polite\"></p><p id=\"tool-gate\" class=\"launch-caption\">Check the current in-game unlock and price.</p><p class=\"launch-caption\">Example: Coins 100, Axe 150 → shortfall 50. Coins 200, Axe 150 → remaining 50. Robux and trial offers cannot be subtracted from Coins.</p></section>";
   const widget = page.slug === "classes" ? cls : page.slug === "gem-perks" ? perks : page.slug === "tools-upgrades" ? tools : "";
-  return `${widget}${sections}${faq}${sources}${relatedHtml}`;
+  const firstBlock = widget || sections[0] || "";
+  const remainingBlocks = widget ? sections.join("") : sections.slice(1).join("");
+  return { firstBlock, remainingBlocks: `${remainingBlocks}${faq}${sources}${relatedHtml}` };
 }
 
 export function FixedTemplateInner({ page }: { page: SeoPageDefinition }) {
+  const article = articleInner(page);
   return (
     <>
       <JsonLd data={pageSchemas(page)} />
@@ -44,9 +48,12 @@ export function FixedTemplateInner({ page }: { page: SeoPageDefinition }) {
             <p className="bw-reviewed">Reviewed <time dateTime={page.lastReviewed}>{page.lastReviewed}</time> · Independent guide</p>
           </div>
         </section>
+        <ResponsiveBannerAd />
         <div className="bw-container bw-page-grid">
           <article className="bw-prose bw-article">
-            <div dangerouslySetInnerHTML={{ __html: articleInner(page) }} />
+            <div dangerouslySetInnerHTML={{ __html: article.firstBlock }} />
+            <NativeAdSlot />
+            <div dangerouslySetInnerHTML={{ __html: article.remainingBlocks }} />
           </article>
           <aside className="bw-sidebar" aria-label="In-page navigation">
             <div className="bw-sidebar-sticky">
@@ -61,7 +68,6 @@ export function FixedTemplateInner({ page }: { page: SeoPageDefinition }) {
             </div>
           </aside>
         </div>
-        <div className="bw-container"><NativeAdSlot /></div>
       </main>
       <LaunchToolsRuntime />
     </>

@@ -754,3 +754,37 @@ body[data-fixed-template="block-wiki"] .bw-article .launch-tool,body[data-fixed-
 body[data-fixed-template="block-wiki"] .bw-prose p,
 body[data-fixed-template="block-wiki"] .bw-prose a,
 body[data-fixed-template="block-wiki"] .bw-prose li { overflow-wrap: anywhere; }
+
+
+/* Ads: isolated to the approved Chop A Forest block-wiki skin. */
+body[data-fixed-template="block-wiki"] .caf-ad {
+  max-width:100%; min-width:0; overflow:hidden; text-align:center;
+}
+body[data-fixed-template="block-wiki"] .caf-ad-label {
+  display:block; margin:0 auto 6px; text-align:center;
+  color:#61725e; font-size:10px; font-weight:600; letter-spacing:.08em;
+  line-height:15px; text-transform:uppercase;
+}
+body[data-fixed-template="block-wiki"] .caf-banner {
+  width:100%; margin:0 auto 32px; padding:0 8px;
+}
+body[data-fixed-template="block-wiki"] .caf-banner-content {
+  display:flex; justify-content:center; align-items:start;
+  width:100%; min-height:90px;
+}
+body[data-fixed-template="block-wiki"] .caf-banner-frame {
+  display:block; flex:0 0 auto; max-width:100%; border:0; overflow:hidden;
+  background:transparent;
+}
+body[data-fixed-template="block-wiki"] .caf-native {
+  width:100%; margin:28px auto 36px; padding:14px 10px 18px;
+  background:rgba(237,244,231,.55); border:1px solid #ccd9c7; border-radius:10px;
+}
+body[data-fixed-template="block-wiki"] .caf-native-content {
+  width:100%; min-width:0; overflow-wrap:anywhere;
+}
+@media (max-width:767px) {
+  body[data-fixed-template="block-wiki"] .caf-banner {margin-bottom:25px; padding:0;}
+  body[data-fixed-template="block-wiki"] .caf-banner-content{min-height:50px;}
+  body[data-fixed-template="block-wiki"] .caf-native {margin:24px auto 30px; padding:12px 8px 16px;}
+}

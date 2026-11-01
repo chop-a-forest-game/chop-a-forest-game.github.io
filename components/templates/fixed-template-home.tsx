@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Leaf, BookOpen } from "lucide-react";
 import { NativeAdSlot } from "@/components/integrations/native-ad-slot";
+import { ResponsiveBannerAd } from "@/components/integrations/responsive-banner-ad";
 import { Faq } from "@/components/site/faq";
 import { JsonLd } from "@/components/site/json-ld";
 import { PageSections } from "@/components/site/page-sections";
@@ -40,6 +41,8 @@ export function FixedTemplateHome({ home }: { home: HomePageDefinition }) {
             <figcaption>Chop A Forest · Roblox game reference</figcaption>
           </figure>
         </section>
+
+        <ResponsiveBannerAd />
 
         <div className="bw-container">
           <div className="bw-section-heading">
