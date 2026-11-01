@@ -9,7 +9,7 @@ import { esc } from "@/lib/fixed-template/render";
 import { pageSchemas } from "@/lib/schema";
 import { routePath } from "@/lib/urls";
 
-function articleInner(page: SeoPageDefinition): string {
+function articleInner(page: SeoPageDefinition): { firstBlock: string; remainingBlocks: string } {
   const sections = page.sections.map((section) => {
     const paragraphs = [section.intro ? `<p>${esc(section.intro)}</p>` : "", ...(section.paragraphs ?? []).map((paragraph) => `<p>${esc(paragraph)}</p>`)].join("");
     const table = section.table ? `<div class="launch-table-wrap"><table><caption>${esc(section.table.caption)}</caption><thead><tr>${section.table.columns.map((c) => `<th scope="col">${esc(c)}</th>`).join("")}</tr></thead><tbody>${section.table.rows.map((r) => `<tr>${r.map((c, i) => i ? `<td>${esc(c)}</td>` : `<th scope="row">${esc(c)}</th>`).join("")}</tr>`).join("")}</tbody></table></div>` : "";
